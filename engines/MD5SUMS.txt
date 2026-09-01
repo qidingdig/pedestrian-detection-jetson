@@ -1,1 +1,0 @@
-47c9e419f3632fb72bd33836cf552bf0  rfdetr-small-gather_fp32.engine

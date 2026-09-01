@@ -1,26 +1,15 @@
-# Jetson TensorRT FP32 行人推理（CP100 · RF-DETR-small）
+# 行人检测（Jetson）
 
 AGX Orin / JetPack 5.1.1 / TensorRT 8.5.2.2
 
-## 用法
+按模型分支拉取，后续新模型会另开分支。
+
+| 分支 | 模型 |
+|---|---|
+| `cp100` | RF-DETR-small CP100 |
 
 ```bash
+git clone -b cp100 <本仓 URL>
 cd /ssd/<自己的目录>/pedestrian-detection-jetson
-
-# 文件夹
 python3 infer_vis.py --model rf --source /path/to/images --out ./out_rf
-
-# 单张图
-python3 infer_vis.py --model rf --source /path/to/one.jpg --out ./out_one
-```
-
-`--conf` 默认 **0.25**
-
-## 可视化
-
-```text
-out_rf/
-  vis/*.jpg            # 原图上绿框
-  predictions.json     # 原图像素 xyxy
-  run.json             # 张数、框总数、n_nonfinite
 ```
