@@ -5,7 +5,7 @@ AGX Orin / JetPack 5.1.1 / TensorRT 8.5.2.2
 ## 用法
 
 ```bash
-cd /ssd/<自己的目录>/rfdetr-cp100-jetson-trt
+cd /ssd/<自己的目录>/pedestrian-detection-jetson
 
 # 文件夹
 python3 infer_vis.py --model rf --source /path/to/images --out ./out_rf
