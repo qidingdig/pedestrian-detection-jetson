@@ -9,7 +9,7 @@ AGX Orin / JetPack 5.1.1 / TensorRT 8.5.2.2
 | `cp100` | RF-DETR-small CP100 |
 
 ```bash
-git clone -b cp100 <本仓 URL>
+git clone -b cp100 https://github.com/qidingdig/pedestrian-detection-jetson.git
 cd /ssd/<自己的目录>/pedestrian-detection-jetson
 python3 infer_vis.py --model rf --source /path/to/images --out ./out_rf
 ```
