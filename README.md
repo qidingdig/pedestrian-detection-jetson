@@ -2,6 +2,16 @@
 
 AGX Orin / JetPack 5.1.1 / TensorRT 8.5.2.2
 
+`.engine` 走 Git LFS，**clone 不会自动安装**。没装的话文件只有一百多字节，推理会失败。
+
+```bash
+sudo apt install git-lfs
+git lfs install
+git clone -b cp100 https://github.com/qidingdig/pedestrian-detection-jetson.git
+cd /ssd/<自己的目录>/pedestrian-detection-jetson
+ls -lh engines/rfdetr-small-gather_fp32.engine   # 应约 111M；若只有一百多字节则 git lfs pull
+```
+
 ## 用法
 
 ```bash
